@@ -42,6 +42,6 @@ testem.log
 Thumbs.db
 
 node_modules/
-package-lock.josn
+/package-lock.josn
 
 ##https://github.com/utkarshbankar/microfrontend-mf/tree/micro-front-end-mf
