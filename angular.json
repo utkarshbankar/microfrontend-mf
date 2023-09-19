@@ -140,7 +140,8 @@
             "styles": [
               "projects/mf-remote/src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "extraWebpackConfig": "projects/mf-remote/webpack.config.js"
           },
           "configurations": {
             "production": {
@@ -156,7 +157,8 @@
                   "maximumError": "4kb"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "extraWebpackConfig": "projects/mf-remote/webpack.config.js"
             },
             "development": {
               "buildOptimizer": false,
@@ -171,12 +173,20 @@
         },
         "serve": {
           "builder": "ngx-build-plus:dev-server",
+          "options": {
+            "browserTarget": "mf-remote:build",
+            "publicHost": "http://localhost:4300",
+            "extraWebpackConfig": "projects/mf-remote/webpack.config.js",
+            "port": 4300
+          },
           "configurations": {
             "production": {
-              "browserTarget": "mf-remote:build:production"
+              "browserTarget": "mf-remote:build:production",
+              "extraWebpackConfig": "projects/mf-remote/webpack.config.prod.js"
             },
             "development": {
-              "browserTarget": "mf-remote:build:development"
+              "browserTarget": "mf-remote:build:development",
+              "extraWebpackConfig": "projects/mf-remote/webpack.config.js"
             }
           },
           "defaultConfiguration": "development"
@@ -203,7 +213,8 @@
             "styles": [
               "projects/mf-remote/src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "extraWebpackConfig": "projects/mf-remote/webpack.config.js"
           }
         }
       }
