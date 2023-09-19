@@ -1,10 +1,11 @@
 # MicrofrontendMf
 
-<<<<<<< Updated upstream
 we ahve basic 3 applications 
 one is shell 
 2nd is remote and third is 
 library 
+
+https://github.com/module-federation/module-federation-examples/blob/master/angular15-microfrontends-lazy-components
 
 https://github.com/module-federation/module-federation-examples/tree/master/angular15-vue3
 =======
@@ -33,4 +34,4 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
->>>>>>> Stashed changes
+
