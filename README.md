@@ -11,7 +11,10 @@ https://github.com/module-federation/module-federation-examples/blob/master/angu
 Steps : 
 we have created one more application suing. 
     > cd microfrontend-mf
+    
     > ng g application mf-shell
+
+    install @angular-builders/custom-webpack
 
 https://github.com/module-federation/module-federation-examples/tree/master/angular15-vue3
 
