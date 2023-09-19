@@ -19,24 +19,24 @@ we have created one more application suing.
     
 Update the angular.json with build configration in respective places.
 
-... 
+
 "architect": {
         "build": {
           "builder": "ngx-build-plus:browser",
           "options": {
-...
+
 -----------------------------------------------------------------------------------------------------------------------------------------------------
-...
  "serve": {
           "builder": "ngx-build-plus:dev-server",
           "options": {
-...
+
 -----------------------------------------------------------------------------------------------------------------------------------------------------
-...
+
  "test": {
           "builder": "ngx-build-plus:karma",
           "options": {
-...
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 https://github.com/module-federation/module-federation-examples/tree/master/angular15-vue3
