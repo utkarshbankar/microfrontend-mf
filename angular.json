@@ -32,7 +32,8 @@
             "styles": [
               "projects/mf-shell/src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "extraWebpackConfig": "projects/mf-shell/webpack.config.js"
           },
           "configurations": {
             "production": {
@@ -48,7 +49,8 @@
                   "maximumError": "4kb"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "extraWebpackConfig": "projects/mdmf-shell/webpack.config.js"
             },
             "development": {
               "buildOptimizer": false,
@@ -63,12 +65,20 @@
         },
         "serve": {
           "builder": "ngx-build-plus:dev-server",
+          "options": {
+            "browserTarget": "mf-shell:build",
+            "publicHost": "http://localhost:4200",
+            "extraWebpackConfig": "projects/mf-shell/webpack.config.js",
+            "port": 4200
+          },
           "configurations": {
             "production": {
-              "browserTarget": "mf-shell:build:production"
+              "browserTarget": "mf-shell:build:production",
+              "extraWebpackConfig": "projects/mf-shell/webpack.config.prod.js"
             },
             "development": {
-              "browserTarget": "mf-shell:build:development"
+              "browserTarget": "mf-shell:build:development",
+              "extraWebpackConfig": "projects/mf-shell/webpack.config.js"
             }
           },
           "defaultConfiguration": "development"
@@ -95,7 +105,8 @@
             "styles": [
               "projects/mf-shell/src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "extraWebpackConfig": "projects/mf-shell/webpack.config.js"
           }
         }
       }
