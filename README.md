@@ -15,6 +15,7 @@ we have created one more application suing.
     > ng g application mf-shell
 
     install @angular-builders/custom-webpack
+    ngx-build-plus
 
 https://github.com/module-federation/module-federation-examples/tree/master/angular15-vue3
 
