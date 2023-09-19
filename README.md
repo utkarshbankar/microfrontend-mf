@@ -8,6 +8,8 @@ library
 
 https://github.com/module-federation/module-federation-examples/blob/master/angular15-microfrontends-lazy-components
 
+https://github.com/module-federation/module-federation-examples/tree/master/angular15-vue3
+
 Steps : 
 we have created one more application suing. 
     > cd microfrontend-mf
@@ -25,18 +27,18 @@ Update the angular.json with build configration in respective places.
           "builder": "ngx-build-plus:browser",
           "options": {
 
------------------------------------------------------------------------------------------------------------------------------------------------------
+
  "serve": {
           "builder": "ngx-build-plus:dev-server",
           "options": {
 
------------------------------------------------------------------------------------------------------------------------------------------------------
 
  "test": {
           "builder": "ngx-build-plus:karma",
           "options": {
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
+we have to add webpack.config files and their content here.
 
 
 https://github.com/module-federation/module-federation-examples/tree/master/angular15-vue3
