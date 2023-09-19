@@ -1,7 +1,7 @@
 # MicrofrontendMf
 
 
-we ahve basic 3 applications 
+we have basic 3 applications 
 one is shell 
 2nd is remote and third is 
 library 
