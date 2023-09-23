@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MicrofrontendService } from './services/microfrontend.service';
+import { HomeComponent } from './home/home.component';
 
 export function initializeApp(mfService: MicrofrontendService): () => Promise<void> {
   return () => mfService.initialise();
@@ -11,7 +12,8 @@ export function initializeApp(mfService: MicrofrontendService): () => Promise<vo
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
