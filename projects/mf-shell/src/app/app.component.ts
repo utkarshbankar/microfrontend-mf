@@ -10,7 +10,7 @@ export class AppComponent {
   title = 'mf-shell';
   constructor(public mfService: MicrofrontendService) {}
 
-  passDataToRemote(){
-    
+  passDataToRemote(componentReference:any){
+    componentReference.fromHost = {prop1:'shell', prop2:'shell_app'}
   }
 }

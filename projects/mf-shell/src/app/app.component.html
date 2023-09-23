@@ -7,4 +7,4 @@
         [routerLink]="microfrontend.routePath">{{ microfrontend.displayName }}</a></li>
   </ul>
 </nav>
-<router-outlet  (activate)="passDataToRemote()"></router-outlet>
+<router-outlet  (activate)="passDataToRemote($event)"></router-outlet>
