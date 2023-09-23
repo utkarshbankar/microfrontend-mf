@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-lazy-test',
@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class LazyTestComponent {
 
+  @Input() fromHost:any ;
+
+  ngOnInit(){
+    console.log("inside lazy component", this.fromHost);
+    
+  }
 }

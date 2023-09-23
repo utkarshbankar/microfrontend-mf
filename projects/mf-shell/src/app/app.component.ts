@@ -9,4 +9,8 @@ import { MicrofrontendService } from './services/microfrontend.service';
 export class AppComponent {
   title = 'mf-shell';
   constructor(public mfService: MicrofrontendService) {}
+
+  passDataToRemote(){
+    
+  }
 }
