@@ -29,15 +29,15 @@ export class MicrofrontendService {
         return [
             {
                 // For Loading
-                remoteEntry: 'http://localhost:4201/remoteEntry.js',
-                remoteName: 'profile',
-                exposedModule: 'ProfileModule',
+                remoteEntry: 'http://localhost:4300/remoteEntry.js',
+                remoteName: 'remote',
+                exposedModule: 'remoteModule',
 
                 // For Routing, enabling us to ngFor over the microfrontends and dynamically create links for the routes
-                displayName: 'Profile',
-                routePath: 'profile',
-                ngModuleName: 'ProfileModule',
+                displayName: 'Remote',
+                routePath: 'remote',
+                ngModuleName: 'remoteModule',
             },
-        ];
+        ]; 
     }
 }

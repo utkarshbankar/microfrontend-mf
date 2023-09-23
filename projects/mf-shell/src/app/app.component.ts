@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MicrofrontendService } from './services/microfrontend.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'mf-shell';
+  constructor(public mfService: MicrofrontendService) {}
 }
