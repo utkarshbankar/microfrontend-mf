@@ -14,7 +14,7 @@ module.exports = {
   plugins: [
     new ModuleFederationPlugin({
       remotes: {
-        profile: 'profile@http://localhost:4201/remoteEntry.js}',
+        remoteApp: 'remote@http://localhost:4300/remoteEntry.js}',
       },
       shared: {
         '@angular/core': { eager: true, singleton: true },

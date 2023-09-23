@@ -4,7 +4,7 @@ const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPl
 
 module.exports = {
   output: {
-    publicPath: 'http://localhost:4201/',
+    publicPath: 'http://localhost:4300/',
     uniqueName: 'mfremote',
     scriptType: 'text/javascript',
   },
@@ -13,11 +13,11 @@ module.exports = {
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: 'profile',
-      library: { type: 'var', name: 'profile' },
+      name: 'remoteApp',
+      library: { type: 'var', name: 'remoteApp' },
       filename: 'remoteEntry.js',
       exposes: {
-        ProfileModule: './projects/mf-remote/src/app/app.module.ts',
+        remoteAppModule: './projects/mf-remote/src/app/lazy-remote/lazy-remote.module.ts',
       },
       shared: {
         '@angular/core': { singleton: true, eager: true },
