@@ -51,6 +51,12 @@ https://github.com/module-federation/module-federation-examples/tree/master/angu
 
 most of the things are same, webpack confing is there and other details like utils to load the remote app creating bootstraping module and route.
 
+## Adding new application
+- create new application without routing.
+- add the webpack config files.
+- update the angular json file.
+- now update the shell app to load the app dynamically in side shell's one of the component.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
