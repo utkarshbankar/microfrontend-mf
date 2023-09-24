@@ -1,4 +1,4 @@
-import { Component, Injector, NgModuleRef, ViewChild, ViewContainerRef, createNgModule, OnInit } from '@angular/core';
+import { Component, Injector, NgModuleRef, ViewChild, ViewContainerRef, createNgModule, OnInit, ComponentRef } from '@angular/core';
 import { loadRemoteModule } from '../utils/federation-utils';
 
 @Component({
@@ -20,6 +20,9 @@ export class HomeComponent implements OnInit {
     }) ;
     const modRef:NgModuleRef<any> = createNgModule(m.LazyDynamicRemoteModule , this.injector);
     const moduleFactory = modRef.instance.resolveComponent();
-    this.remoteModule.createComponent(moduleFactory, {ngModuleRef: modRef});
+    const dynamicCompRef:ComponentRef<any> = this.remoteModule.createComponent(moduleFactory, {ngModuleRef: modRef});
+    if(dynamicCompRef){
+      dynamicCompRef['instance'].inputFromShell = { home:'home Prop' , homeShell: 'shell  home Prop'};
+    }
    }
 }
