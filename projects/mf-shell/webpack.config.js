@@ -15,6 +15,7 @@ module.exports = {
     new ModuleFederationPlugin({
       remotes: {
         remoteApp: 'remote@http://localhost:4300/remoteEntry.js}',
+        dynamicRemoteApp:'remote@http://localhost:4400/dynamicRemoteAppEntry.js}'
       },
       shared: {
         '@angular/core': { eager: true, singleton: true },
