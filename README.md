@@ -51,6 +51,7 @@ https://github.com/module-federation/module-federation-examples/tree/master/angu
 
 most of the things are same, webpack confing is there and other details like utils to load the remote app creating bootstraping module and route.
 
+custome webpack link -https://github.com/cascornelissen/event-hooks-webpack-plugin
 ## Adding new application
 - create new application without routing.
 - add the webpack config files.
