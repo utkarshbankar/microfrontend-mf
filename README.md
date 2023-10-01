@@ -58,6 +58,8 @@ custome webpack link -https://github.com/cascornelissen/event-hooks-webpack-plug
 - update the angular json file.
 - now update the shell app to load the app dynamically in side shell's one of the component.
 
+## webpack plugin ref- 
+- https://webpack.js.org/contribute/writing-a-plugin/
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
