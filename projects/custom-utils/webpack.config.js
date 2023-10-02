@@ -6,7 +6,7 @@
  * - Specifies an event hook to tap into.
  * - Manipulates webpack internal instance specific data.
  * - Invokes webpack provided callback after functionality is complete.
- * 
+ * - Ref Link -https://webpack.js.org/contribute/writing-a-plugin/#creating-a-plugin
 */
 
 // A JavaScript class.
