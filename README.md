@@ -43,8 +43,6 @@ we have to add webpack.config files and their content here.
 
 https://github.com/module-federation/module-federation-examples/tree/master/angular15-vue3
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.6.
-
 Here we can find imp details to load the remote app in to shell.
 
 https://github.com/module-federation/module-federation-examples/tree/master/angular15-microfrontends-lazy-components/projects/mdmf-shell/src
