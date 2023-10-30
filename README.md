@@ -21,16 +21,18 @@ Update the angular.json with build configration in respective places.
         "build": {
           "builder": "ngx-build-plus:browser",
           "options": {
+          ...
 
 
  "serve": {
           "builder": "ngx-build-plus:dev-server",
           "options": {
-
+          ...
 
  "test": {
           "builder": "ngx-build-plus:karma",
           "options": {
+          ...
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 we have to add webpack.config files and their content here.
