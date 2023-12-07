@@ -22,6 +22,7 @@ Update the angular.json with build configration in respective places.
           "builder": "ngx-build-plus:browser",
           "options": {
           ...
+}
 
 
  "serve": {
