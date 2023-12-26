@@ -86,7 +86,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "mf-shell:build"
+            "buildTarget": "mf-shell:build"
           }
         },
         "test": {
@@ -194,7 +194,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "mf-remote:build"
+            "buildTarget": "mf-remote:build"
           }
         },
         "test": {
@@ -302,7 +302,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "mf-DynamicRemote:build"
+            "buildTarget": "mf-DynamicRemote:build"
           }
         },
         "test": {
